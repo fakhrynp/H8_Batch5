@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Failure Prediction</title>
+</head>
+<body>
+    <h1>Heart Failure Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="usia">Usia:</label>
+        <input type="number" name="usia" required>
+
+        <label for="anaemia">Anaemia:</label>
+        <select name="anaemia" required>
+            <option value="0">Tidak</option>
+            <option value="1">Ya</option>
+        </select>
+
+        <label for="creatinin_fosfokinase">Creatinin Fosfokinase:</label>
+        <input type="number" name="creatinin_fosfokinase" required>
+
+        <label for="diabetes">Diabetes:</label>
+        <select name="diabetes" required>
+            <option value="0">Tidak</option>
+            <option value="1">Ya</option>
+        </select>
+
+        <label for="fraksi_ejeksi">Fraksi Ejeksi:</label>
+        <input type="number" name="fraksi_ejeksi" required>
+
+        <label for="tekanan_darah_tinggi">Tekanan Darah Tinggi:</label>
+        <select name="tekanan_darah_tinggi" required>
+            <option value="0">Tidak</option>
+            <option value="1">Ya</option>
+        </select>
+
+        <label for="platelets">Platelets:</label>
+        <input type="number" name="platelets" step="any" required>
+
+        <label for="kreatinin_serum">Kreatinin Serum:</label>
+        <input type="number" name="kreatinin_serum" step="any" required>
+
+        <label for="sodium_serum">Sodium Serum:</label>
+        <input type="number" name="sodium_serum" required>
+
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <select name="jenis_kelamin" required>
+            <option value="0">Perempuan</option>
+            <option value="1">Laki-laki</option>
+        </select>
+
+        <label for="perokok">Perokok:</label>
+        <select name="perokok" required>
+            <option value="0">Tidak</option>
+            <option value="1">Ya</option>
+        </select>
+
+        <label for="time">Time:</label>
+        <input type="number" name="time" required>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
